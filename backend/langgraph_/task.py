@@ -177,14 +177,14 @@ def create_query(
             print("user_question:", user_question)
             print("today:", today)
 
-            # prompt_path = "backend/prompts/query_creation/financial_v1.prompt"
+            prompt_path = "backend/prompts/query_creation/financial_v1.prompt"
             # user_question_eval 값에 따라 프롬프트 선택
-            if user_question_eval == "1":
-                prompt_path = "backend/prompts/query_creation/local_v1.prompt"
-            elif user_question_eval == "2":
-                prompt_path = "backend/prompts/query_creation/financial_v1.prompt"
-            else:
-                raise ValueError("Invalid value for user_question_eval. Only '1' or '2' are allowed.")
+            # if user_question_eval == "1":
+            #     prompt_path = "backend/prompts/query_creation/local_v1.prompt"
+            # elif user_question_eval == "2":
+            #     prompt_path = "backend/prompts/query_creation/financial_v1.prompt"
+            # else:
+            #     raise ValueError("Invalid value for user_question_eval. Only '1' or '2' are allowed.")
 
             # 프롬프트 로드 및 구성
             prefix = load_prompt(prompt_path).format(
