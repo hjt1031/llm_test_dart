@@ -8,7 +8,9 @@ load_dotenv()
 # OpenAI API 키를 환경 변수에서 가져오기
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+print(os.getenv("OPENAI_API_KEY")) 
 if not OPENAI_API_KEY:
+    print("OPENAI_API_KEY ====> " + OPENAI_API_KEY)
     raise ValueError("환경 변수 OPENAI_API_KEY가 설정되지 않았습니다.")
 
 # GPT-4 모델 설정
