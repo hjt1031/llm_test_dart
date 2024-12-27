@@ -12,8 +12,8 @@ def main():
         return
 
     st.header("DAQUV LLM TEST")
-    # st.text("*연결 데이터 지방재정, 재무제표")
-    st.text("*연결 데이터 재무제표")
+    st.text("*연결 데이터 지방재정, 재무제표")
+    #st.text("*연결 데이터 재무제표")
 
     # 사용자 입력 받기
     task = st.text_input("질문을 입력해주세요.")
